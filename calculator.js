@@ -30,7 +30,9 @@ function relpy_click(calculate) {
                     } else if (operator =='*') {
 
                         operand1 =Number(operand1) * Number(operand2);
-                    }
+                    } else if (operator =='/') {
+                        operand1= Number(operand1)/ Number(operand2);
+                    } 
 
                     operand1 = String(operand1)
                     operand2 = '';
@@ -46,7 +48,9 @@ function relpy_click(calculate) {
             operand1 = Number(operand1) - Number(operand2);
         } else if(operator =='*') {
             operand1= Number(operand1) * Number(operand2);
-        } 
+        } else if(operator =='/') {
+            operand1= Number(operand1)/ Number(operand2);
+        }
         console.log(operation + " = " + operand1);
         operation = '';
     }
