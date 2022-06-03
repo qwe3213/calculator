@@ -3,9 +3,9 @@ let operation = '';
 
 
 
-// 클릭 했을 때 작동
+
 function relpy_click(calculate) {
-    // 계산기 초기화는 C 버튼
+
     if (calculate == 'c'){
         operation;
     } else if (calculate != '=') {
